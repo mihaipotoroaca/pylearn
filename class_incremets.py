@@ -1,6 +1,3 @@
-import self as self
-
-
 class Car:
     """
     This is a car class
@@ -13,9 +10,21 @@ class Car:
 
     def show(self):
         print(f'This is a {self.color} car and  is named {self.name}')
+    @staticmethod
+    def ShowNrOfInst():
+        print(f'The class Car is instanced {Car.nrOfInst}')
 
-    def ShowNrOfInst(self):
-        print(f'The class Car is instanced {self.nrOfInst}')
+class SmallCar(Car) :
+
+    def __init__(self, small_car_name, small_car_color, size):
+        super().__init__(color=small_car_color, name=small_car_name)
+        self.size = size
+
+    def speed(self):
+        return self.size * 2
+
+    def show_speed(self):
+        print(f'This is the small car speed {self.speed()}km/h')
 
 
 if __name__ == '__main__':
@@ -26,6 +35,7 @@ if __name__ == '__main__':
     Duster.show()
     Sandero.show()
     Duster.ShowNrOfInst()
+    Car.ShowNrOfInst()
 
 
 
