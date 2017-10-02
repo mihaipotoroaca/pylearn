@@ -1,5 +1,6 @@
-from coffee import greather_than
-from fifi import concatenate_list
+from lessons.coffee import greather_than
+from lessons.fifi import concatenate_list
+
 
 def main():
     gt = greather_than(4, 6)

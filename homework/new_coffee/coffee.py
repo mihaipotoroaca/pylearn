@@ -23,16 +23,16 @@ class Coffee:
         time_to_prepare = self.water/10 + (self.coffee_spoons*10 + self.sugar*5)/5
         print(f'This coffe takes about {time_to_prepare} seconds to prepare')
 
-
-if __name__ == '__main__':
-
-    first_coffee = Coffee(2,2,40)
-    second_coffee = Coffee(3,1,20)
-
-    first_coffee.prepare_coffee()
-    first_coffee.show_coffee_preparation()
-    first_coffee.prepare_time_coffee()
-
-    second_coffee.prepare_coffee()
-    second_coffee.show_coffee_preparation()
-    second_coffee.prepare_time_coffee()
+#
+# if __name__ == '__main__':
+#
+#     first_coffee = Coffee(2,2,40)
+#     second_coffee = Coffee(3,1,20)
+#
+#     first_coffee.prepare_coffee()
+#     first_coffee.show_coffee_preparation()
+#     first_coffee.prepare_time_coffee()
+#
+#     second_coffee.prepare_coffee()
+#     second_coffee.show_coffee_preparation()
+#     second_coffee.prepare_time_coffee()

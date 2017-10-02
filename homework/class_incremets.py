@@ -14,28 +14,30 @@ class Car:
     def ShowNrOfInst():
         print(f'The class Car is instanced {Car.nrOfInst}')
 
-class SmallCar(Car) :
+class SmallCar(Car):
+        def __init__(self, small_car_name, small_car_color, size):
+            super().__init__(name=small_car_name, color=small_car_color)
+            self.size = size
 
-    def __init__(self, small_car_name, small_car_color, size):
-        super().__init__(color=small_car_color, name=small_car_name)
-        self.size = size
+        def speed(self):
+            return self.size*2
 
-    def speed(self):
-        return self.size * 2
-
-    def show_speed(self):
-        print(f'This is the small car speed {self.speed()}km/h')
+        def show_speed(self):
+            print(f'This is the small car speed {self.speed()}km/h')
 
 
 if __name__ == '__main__':
 
     Duster = Car('Dacia Duster', 'black')
     Sandero = Car('Dacia Sandero', 'red')
-
+    polo = SmallCar('VW Polo', 'blue', 50)
     Duster.show()
     Sandero.show()
     Duster.ShowNrOfInst()
     Car.ShowNrOfInst()
+    polo.show()
+    polo.show_speed()
+
 
 
 

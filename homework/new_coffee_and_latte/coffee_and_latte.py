@@ -1,5 +1,5 @@
-from new_coffee.coffee import *
-from new_latte.coffee_latte import *
+from homework.latte_machiato.coffee_latte import CoffeeLatte
+from homework.new_coffee.coffee import Coffee
 
 if __name__ == '__main__':
     first_latte = CoffeeLatte(2,1,30,20)

@@ -1,12 +1,15 @@
-from new_coffee.coffee import *
+from homework.new_coffee.coffee import Coffee
+
 
 class CoffeeLatte(Coffee):
+
     """
     Coffee class with a bit of milk
     """
-    def __init__ (self, latte_spoons , latte_sugar, latte_water, milk):
-       super().__init__(coffee_spoons=latte_spoons, sugar=latte_sugar, water=latte_water)
-       self.milk = milk
+
+    def __init__ (self, latte_spoons, latte_sugar, latte_water, milk):
+        super().__init__(coffee_spoons=latte_spoons, sugar=latte_sugar, water=latte_water)
+        self.milk = milk
 
     def prepare_coffee(self):
         return Coffee.quantity + self.milk
