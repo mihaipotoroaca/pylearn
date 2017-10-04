@@ -1,4 +1,4 @@
-from fifi import concatenate_list
+from lessons.fifi import concatenate_list
 
 if __name__ == '__main__':
 
